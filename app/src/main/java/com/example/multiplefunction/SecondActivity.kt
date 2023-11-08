@@ -28,5 +28,36 @@ class SecondActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // android code here
+        androidActivity.setOnClickListener {
+            val intent = Intent(applicationContext, AndoridActivity::class.java)
+            startActivity(intent)
+        }
+        // ios code here
+        iosActivity.setOnClickListener {
+            val intent = Intent(applicationContext, IOSActivity::class.java)
+            startActivity(intent)
+        }
+        // flutter code here
+        flutterActivity.setOnClickListener {
+            val intent = Intent(applicationContext, FlutterActivity::class.java)
+            startActivity(intent)
+        }
+        // react code here
+        reactActivity.setOnClickListener {
+            val intent = Intent(applicationContext, ReactActivity::class.java)
+            startActivity(intent)
+        }
+        // web code here
+        webActivity.setOnClickListener {
+            val intent = Intent(applicationContext, WebActivity::class.java)
+            startActivity(intent)
+        }
+        // machine code here
+        machineActivity.setOnClickListener {
+            val intent = Intent(applicationContext, MachineActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
